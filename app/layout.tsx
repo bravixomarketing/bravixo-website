@@ -2,26 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Bravixo - Growth & Field Activation Agency',
-  description: 'Marketing Beyond Screens. Real-world customer engagement through field activation, product demonstrations, and strategic growth campaigns.',
-  keywords: 'field activation, brand activation, rural marketing, experiential marketing, growth campaigns',
-  authors: [{ name: 'Bravixo' }],
+  title: 'Bravixo - Field Activation Marketing',
+  description: 'Connect with real customers in real places through innovative field activation campaigns',
+  keywords: 'field activation, marketing, brand activation, experiential marketing',
   viewport: 'width=device-width, initial-scale=1',
-  robots: 'index, follow',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://bravixo.com',
-    title: 'Bravixo - Growth & Field Activation Agency',
-    description: 'Marketing Beyond Screens. Real-world customer engagement through field activation, product demonstrations, and strategic growth campaigns.',
-    images: [
-      {
-        url: 'https://bravixo.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
+  creator: 'Bravixo Marketing',
+  themeColor: '#D4AF37',
 };
 
 export default function RootLayout({
@@ -33,10 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="theme-color" content="#0B0B0B" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="bg-white dark:bg-primary text-primary dark:text-white overflow-x-hidden">
+      <body>
         {children}
       </body>
     </html>
